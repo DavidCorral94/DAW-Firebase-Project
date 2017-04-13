@@ -20,9 +20,9 @@ In order to make it work, you have to:
 
 You can use the [Firebase Console](https://console.firebase.google.com) to send Push notifications, but also you can use the cURL command that are in [/res/notifications.txt](https://github.com/Davidcorral94/DAW-Firebase-Project/blob/master/daw-firebase-project/res/notifications.txt) to send a Push notification to a specific user or to a specific topic (remember to set your server key).
 
-Figure 1 - Interface
 ![Interface](https://i.gyazo.com/eaa0352d3aa7621c19ba1eac11d36d21.png)
+*Figure 1 - Interface*
 
-Figure 2 - Push Notification received
-![Interface](https://i.gyazo.com/90c54d214ea74574781799ae55d71bf4.png)
+![Push Notification](https://i.gyazo.com/90c54d214ea74574781799ae55d71bf4.png)
+*Figure 2 - Push Notification received*
 

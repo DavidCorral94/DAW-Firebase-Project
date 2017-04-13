@@ -1,0 +1,9 @@
+// Do not forget about firewall
+
+// Push to specific user
+curl --header "Authorization: key=YOUR_SERVER_FCM_KEY" --header "Content-Type: application/json" -d "{\"to\":\"USERS_TOKEN\",\"notification\":{\"title\":\"Hello\",\"body\": \"World\",\"icon\": \"/logo.png\"}}" https://fcm.googleapis.com/fcm/send﻿
+
+// Push to topic
+curl --header "Authorization: key=YOUR_SERVER_FCM_KEY" --header "Content-Type: application/json" -d "{\"to\":\"/topics/dawproject\",\"notification\":{\"title\":\"Hello\",\"body\": \"World\",\"icon\": \"/logo.png\"}}" https://fcm.googleapis.com/fcm/send﻿
+
+

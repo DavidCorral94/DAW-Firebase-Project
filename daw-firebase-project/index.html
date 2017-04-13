@@ -1,0 +1,99 @@
+<html lang="es-ES">
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <meta charset="UTF-8" />
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/fcm.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>DAW Firebase</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a href="./index.html"><img id="imageLogo" alt="Website logo" src="./img/logo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">DAW Firebase Example</a></li>
+                    <li><a href="https://github.com/Davidcorral94/DAW-Firebase-Project">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-4 text-left">
+                <h2><b>FCM Test</b>
+                </h2>
+                <hr>
+                <article class="well">
+                    <h4><b>Your token:</b></h4>
+                    <h5 id="token" style="word-break: break-all; word-wrap: break-word;"></h5>
+                    <h4><b>Your topic:</b></h4>
+                    <h5 id="topic"></h5>
+                </article>
+                <h4><b>Message received:</b></h4>
+                <table id="messages" class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Title</th>
+                            <th>Body</th>
+                            <th>Icon</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-4 text-left">
+                <h2><b>FRDB Test</b> - Form
+                </h2>
+                <hr>
+                <article class="well">
+                    <form action="javascript:void(0);">
+                        <div class="form-group">
+                            <label for="name"><b>Name:</b></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><b>Email:</b></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><b>Phone:</b></label>
+                            <input type="number" class="form-control" id="phone" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning" onclick="writeUserData()">Write!</button>
+                    </form>
+                </article>
+            </div>
+            <div class="col-sm-4 text-left">
+                <h2><b>FRDB Test</b> - Data</a>
+                </h2>
+                <hr>
+                <table id="mytable" class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
